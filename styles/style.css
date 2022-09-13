@@ -1,0 +1,339 @@
+
+body{
+    background: black;
+}
+.navbar-default {
+    background: rgba(0, 0, 0, 0.753);
+}
+
+.navbar-nav  {
+      color: white;
+}
+
+.navbar-brand, .navbar-nav>li>a {
+    text-shadow: none;
+}
+
+.navbar-default {
+    background-color:black;
+    border-color: black;
+    text-decoration-line: underline;
+    text-decoration: aqua;
+    padding-top: 15px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    margin-bottom: -10px;
+}
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    padding-bottom: 23px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: black;
+    color: aqua;
+}
+/*This is for animated underline navbar*/
+.navbar-default .navbar-brand:before {
+    content:'""""""""""""""""""""""""""""""""""""""""""""""""' ;
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 2px;
+    bottom: 8px;
+    left: -50%;
+    background-color: aqua;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out 0s;
+}
+/*This is for animated underline navbar*/
+.navbar-default .navbar-brand:hover:before{
+    opacity: 1;
+    left: 0;
+    transform: scaleX(1);
+    }
+/*This is for animated underline navbar*/
+.navbar-default .navbar-nav > li > a:before{
+    content:'"""""""""""' ;
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 2px;
+    bottom: 8px;
+    left: -50%;
+    background-color: white;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out 0s;
+}
+/*This is for animated underline navbar*/
+.navbar-default .navbar-nav > li > a:hover:before{
+opacity: 1;
+left: 0;
+transform: scaleX(1);
+}
+    .navbar-header{
+     padding-right: 20px;
+ }
+
+ .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    background-color: black;
+    color:aqua;
+ }
+
+ .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: audiowide;
+  }
+  .navbar-nav {
+    float: left;
+    height: 50px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 630;
+    text-transform: uppercase;
+    font-family: audiowide;
+    letter-spacing: 0px;
+    
+}
+
+.pull-left{
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+
+.skills{
+    position: relative;
+    display: flex;
+    margin: 5px 0px;
+    padding: 10px 10px 10px;
+    background: linear-gradient(#616161 0%, #333 10%, #222);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #000;
+    transition: 0.5s;
+    font-family: audiowide;
+}
+.opacity{
+    padding-top: 2%;
+}
+.opacity:hover .skills{
+    opacity: 0.05;
+}
+
+.opacity .skills:hover{
+    opacity: 1;
+}
+
+.skills:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, .1);
+    z-index: 10;
+}
+
+.skills .name{
+    position: relative;
+    width: 110px;
+    text-align: right;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+
+.skills .value{
+    position: relative;
+    width: 40px;
+    text-align: right;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+
+.skills .precent{
+    position: relative;
+    width: calc(100% - 150px);
+    height: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow: inset 0 0 10px #000;
+    overflow: hidden;
+}
+
+.skills .precent .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: inset 0 0 2px #000;
+    animation: animate 4s ease-in-out forwards;
+}
+
+@keyframes animate{
+    from{
+        width: 0;
+    }
+}
+
+/*skills color*/
+.skills:nth-child(2) .precent .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.skills:nth-child(3) .precent .progress{
+    background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+
+.skills:nth-child(4) .precent .progress{
+    background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+.skills:nth-child(5) .precent .progress{
+    background: linear-gradient(45deg, #22ffde, #2196f3);
+}
+.skills:nth-child(6) .precent .progress{
+    background: linear-gradient(45deg, #ff2222, #21f3bf);
+}
+.skills:nth-child(7) .precent .progress{
+    background: linear-gradient(45deg, #f0ff22, #e221f3);
+}
+.skills:nth-child(8) .precent .progress{
+    background: linear-gradient(45deg, #f0ff22, #4821f3);
+}
+.skills:nth-child(9) .precent .progress{
+    background: linear-gradient(45deg, #282923, #f3214f);
+}
+
+.pull-right{
+    padding-top: 5%;
+}
+.img {
+    vertical-align: middle;
+    padding-left: 20%;
+}
+
+.pull-left{
+    padding-left: 7%;
+    padding-top: 5%;
+}
+
+h1,h2,h3,h4{
+    font-family: audiowide;
+    color: white;
+}
+
+h1{
+    font-size: 45px;
+    padding-bottom: 10px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+* {box-sizing: border-box}
+
+.space{
+    padding-top: 2%;
+}
+
+.shape{
+    color: aqua;
+}
+
+.skills{
+    position: relative;
+    display: flex;
+    margin: 7px 0px;
+    padding: 10px 10px 10px;
+    background: linear-gradient(#616161 0%, #333 10%, #222);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #000;
+    transition: 0.5s;
+    font-family: audiowide;
+}
+
+/*text color like rainbow*/
+.rainbow{
+    background-image: linear-gradient(45deg, #ffee54, #9e1b84);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pull-right .col-sm-12 {
+    width: fit-content;
+    height: fit-content;
+}
+
+.img {
+    vertical-align: middle;
+    padding-left:0%;
+    margin-left: -50px;
+}
+
+.pull-right .col-sm-12 {
+    width: fit-content;
+    height: fit-content;
+}
+
+/*responsive img*/
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: black;
+    border: 1px solid #000;
+
+}
+
+/*100px main img left position on site*/
+.img-left{
+    margin-left: -100px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    margin-bottom: -10px;
+}
+
+@media (max-width: 770px){
+    .mobile-nav{
+        margin-left: -115px;
+        margin-top: 60px;
+    }
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        border-color: #e7e7e7;
+        padding-bottom: 43px;
+    }
+};
+
+.mobile-nav{
+    float: right;
+}
+
+.navbar-default .navbar-nav {
+    width:80%;
+}
